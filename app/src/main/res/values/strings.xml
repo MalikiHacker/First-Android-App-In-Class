@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProjetVente</string>
+    <string name="hello">Bienvenue cher Utilisateur</string>
+    <string name="prenom">Thierno Maliki</string>
+    <string name="nom">BARRY</string>
+    <string name="adresse">Senegal, Kolda, Velingara</string>
+    <string name="add">Ajouter un Eleve</string>
+</resources>

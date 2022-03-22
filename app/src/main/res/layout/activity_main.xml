@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EDIT_ELEVE">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:textColor="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrer le Nom "
+            android:layout_weight="2"/>
+
+        <EditText
+            android:id="@+id/prenomEditText"
+            android:layout_width="200px"
+            android:layout_marginLeft="5px"
+            android:layout_height="wrap_content"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:layout_weight="3"/>
+        <TextView
+            android:id="@+id/input_prenom_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/error"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrer le Prenom "
+            android:layout_weight="2"/>
+
+        <EditText
+            android:id="@+id/nomEditText"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:layout_weight="3"/>
+        <TextView
+            android:id="@+id/input_nom_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:textColor="@color/error"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"
+            android:layout_marginHorizontal="40px"
+            android:textColor="@color/white"
+            android:background="@color/teal_700"
+            android:layout_weight="2"/>
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+            android:layout_marginHorizontal="40px"
+            android:textColor="@color/white"
+            android:background="@color/error"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
